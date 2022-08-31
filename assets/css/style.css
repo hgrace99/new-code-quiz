@@ -1,0 +1,35 @@
+:root {
+    --primary: #4C0090;
+    --secondary: #C236B2;
+    --tertiary: #AB92A8;
+    --grey: #202020;
+}
+
+body {
+    background: #F4F4F4;
+    color: var(--grey);
+    margin: 0;
+    padding: 25px 25px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    background: #F4F4F4;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header p {
+    color: var(--secondary);
+}
+
+header h4 {
+    font-weight: normal;
+}
+
