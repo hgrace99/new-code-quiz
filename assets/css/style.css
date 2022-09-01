@@ -3,19 +3,21 @@
     --secondary: #C236B2;
     --tertiary: #AB92A8;
     --grey: #202020;
+    --light: #9d9d9d;
 }
 
 body {
     background: #F4F4F4;
     color: var(--grey);
     margin: 0;
-    padding: 25px 25px;
+    padding: 30px 45px;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* header styling */
 
 header {
     background: #F4F4F4;
@@ -33,3 +35,62 @@ header h4 {
     font-weight: normal;
 }
 
+/* main section styling */
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-title {
+    font-size: 40px;
+    padding: 0px;
+}
+
+.instructions {
+    font-weight: normal;
+    padding: 0px 260px 10px 260px;
+    text-align: center;
+}
+
+/* button styles */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10pz 10px 10px;
+    
+}
+
+.btn {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+    color: #F4F4F4;
+    font-size: 20px;
+    background: var(--primary);
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+  }
+  
+  .btn:hover {
+    background: var(--secondary);
+    box-shadow: 0 2px var(--grey);
+    top: -2px;
+  }
+  .btn:active {
+    box-shadow: 0 0px var(--grey);
+    top: 0;
+  }
+
+  /* answer style */
+
+  .answer {
+    font-weight: normal;
+    font-style: italic;
+    color: var(--light);
+  }

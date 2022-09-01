@@ -16,16 +16,29 @@
         <p>View high scores</p>
     </div>
     <div class="timer">
-        <h4>Time:</h4>
+        <h4 id="timer"></h4>
     </div>
 </header>
 
 <main class="page-content">
     <!--Question box-->
     <section class="question-box">
-        <h1 class="question-title">Coding Quiz Challenge</h1>
-        <h3 class="instructions"> Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h3>
-        <button class="btn" id="save-task" type="submit">Start Quiz</button>
+
+        <div>
+            <h1 class="question-title" id="question"></h1>
+        </div>
+
+        <div class="button-container">
+            <button class="btn" id="op1" type="submit"></button>
+            <button class="btn" id="op2" type="submit"></button>
+            <button class="btn" id="op3" type="submit"></button>
+            <button class="btn" id="op4" type="submit"></button>
+        </div>
+
+        <div class="answer-container">
+            <h2 class="answer-thing" id="answer"></h2>
+        </div>
+
     </section>
 </main>
 
